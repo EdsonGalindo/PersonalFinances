@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinances.API", "PersonalFinances.API\PersonalFinances.API.csproj", "{50E62968-B869-4D4D-B8BD-1B3417F955C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinances.Domain", "PersonalFinances.Domain\PersonalFinances.Domain.csproj", "{A08500B2-3C4B-4C15-B8DD-6D6FA97F4CD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinances.Tests", "PersonalFinances.Tests\PersonalFinances.Tests.csproj", "{3D33E409-106B-412F-BB6B-3A03EBF634B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinances.Core", "PersonalFinances.Core\PersonalFinances.Core.csproj", "{DDB98D91-544E-4650-9D6E-5AC49F6B7E03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{50E62968-B869-4D4D-B8BD-1B3417F955C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50E62968-B869-4D4D-B8BD-1B3417F955C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50E62968-B869-4D4D-B8BD-1B3417F955C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08500B2-3C4B-4C15-B8DD-6D6FA97F4CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08500B2-3C4B-4C15-B8DD-6D6FA97F4CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08500B2-3C4B-4C15-B8DD-6D6FA97F4CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08500B2-3C4B-4C15-B8DD-6D6FA97F4CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D33E409-106B-412F-BB6B-3A03EBF634B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D33E409-106B-412F-BB6B-3A03EBF634B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D33E409-106B-412F-BB6B-3A03EBF634B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D33E409-106B-412F-BB6B-3A03EBF634B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB98D91-544E-4650-9D6E-5AC49F6B7E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB98D91-544E-4650-9D6E-5AC49F6B7E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB98D91-544E-4650-9D6E-5AC49F6B7E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB98D91-544E-4650-9D6E-5AC49F6B7E03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
