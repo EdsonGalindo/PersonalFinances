@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PersonalFinances.Domain.Entities
+namespace PersonalFinances.Application.Queries.ViewModels
 {
-    public class Release
+    public class ReleaseViewModel
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
@@ -12,10 +12,5 @@ namespace PersonalFinances.Domain.Entities
         public string Description { get; set; }
         public string Account { get; set; }
         public string Type { get; set; }
-
-        public Release()
-        {
-
-        }
     }
 }

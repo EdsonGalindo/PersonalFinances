@@ -1,12 +1,11 @@
-﻿using PersonalFinances.Core.DomainObjects;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace PersonalFinances.Domain.Entities
 {
-    public class PersonalFinance : IAggregateRoot
+    public class PersonalFinance
     {
         private readonly List<Release> _releaseItems;
         public List<Release> ReleaseItems => _releaseItems;
@@ -17,15 +16,28 @@ namespace PersonalFinances.Domain.Entities
             _releaseItems = new List<Release>();
         }
 
+        public PersonalFinance(Release release)
+        {
+            _releaseItems.Add(release);
+            ReleaseAmount++;
+        }
+
         public PersonalFinance(List<Release> releases)
         {
             _releaseItems = releases;
+            ReleaseAmount += releases.Count;
         }
 
         public void AddRelease(Release release)
         {
             _releaseItems.Add(release);
             ReleaseAmount++;
+        }
+
+        public void AddReleaseList(List<Release> releases)
+        {
+            _releaseItems.AddRange(releases);
+            ReleaseAmount += releases.Count;
         }
 
         public void RemoveRelease(Release release)
